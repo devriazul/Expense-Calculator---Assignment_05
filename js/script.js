@@ -105,8 +105,8 @@ btnCalculate.addEventListener('click',function (){
             display(displayBalance,balance);
             displayBalance.style.color = "black";
         }else{
-            display(displayBalance, `${balance}, Error: The budget is less than your expenses.`);
-            displayBalance.style.color = "#84D0DB";
+            display(displayBalance, `${balance}, Error: Your income is less than your expenses.`);
+            displayBalance.style.color = "#E93D61";
         }
         incomeField.setCustomValidity('');
         }else{
@@ -130,8 +130,8 @@ btnSave.addEventListener('click', function(){
         displayRemaining.style.color = "blue";
         savingField.setCustomValidity('');
     }else{
-        display(displayRemaining, `${remainingBalance} Error: Please lower the savings rate.` );
-        displayRemaining.style.color = "#84D0DB";
-        savingField.setCustomValidity('Please lower the savings rate.');
+        display(displayRemaining, `${remainingBalance} Error: Your Expense is too much so, Please decrease the savings rate.` );
+        displayRemaining.style.color = "#E93D61";
+        savingField.setCustomValidity('Please lower the savings percentage.');
     }
 });
